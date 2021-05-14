@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  width: 80%;
+  margin: 5% auto;
+}
+
+img {
+  margin-top: 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18px;
+  color: darkgray;
+  margin-bottom: 0px;
+}
+.highTemp {
+  font-size: 14px;
+  color: darkgray;
+  padding: 0px 5px;
+}
+.lowTemp {
+  font-size: 14px;
+  color: lightgray;
+  padding: 0px 5px;
+}
+
+.cardWrapper {
+  width: 100px;
+  height: 200px;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+#temp {
+  text-align: center;
+}
