@@ -46,7 +46,13 @@ class WeatherData extends Component {
       if (!this.state.weather.daily) {
         return <p> ... </p>;
       } else {
-        return <div className="container">{cards}</div>;
+        return (
+          <div className="container">
+            <div className="row d-flex justify-content-center pt-5">
+              {cards}
+            </div>
+          </div>
+        );
       }
     }
   }
@@ -55,12 +61,14 @@ class WeatherData extends Component {
 class WeatherCard extends Component {
   render() {
     return (
-      <div className="cardWrapper">
-        <h1>{this.props.day}</h1>
-        <img src={this.props.icon}></img>
-        <div id="temp">
-          <span className="highTemp">{this.props.highTemp}°</span>
-          <span className="lowTemp">{this.props.lowTemp}°</span>
+      <div className="col-12 col-md-1 mx-3">
+        <div className="cardWrapper">
+          <h1>{this.props.day}</h1>
+          <img src={this.props.icon}></img>
+          <div id="temp">
+            <span className="highTemp">{this.props.highTemp}°</span>
+            <span className="lowTemp">{this.props.lowTemp}°</span>
+          </div>
         </div>
       </div>
     );

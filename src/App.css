@@ -1,9 +1,16 @@
+body {
+  background: url("./img/cloud-background.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 .container {
   display: flex;
   border-radius: 10px;
-  background-color: #f8f9fa;
+  background-color: rgba(58, 93, 165, 0.7);
+  border: thin solid lightblue;
   width: 80%;
   margin: 5% auto;
+  box-shadow: 2px 2px 3px 1px #aabadd;
 }
 
 img {
@@ -13,12 +20,12 @@ img {
 h1 {
   text-align: center;
   font-size: 18px;
-  color: darkgray;
+  color: white;
   margin-bottom: 0px;
 }
 .highTemp {
   font-size: 14px;
-  color: darkgray;
+  color: #153278;
   padding: 0px 5px;
 }
 .lowTemp {
